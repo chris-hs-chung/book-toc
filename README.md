@@ -24,5 +24,7 @@ You can name it however you want.
 
 ### Run the script
 Run the script in the console. It will ask for the relative path of the book's json file.
+
 For example: book_info\harey_potter_and_the_chamber_of_binary_numbers.json
+
 If you are in a code editor like Visual studio, you can just right click on the file, and then click "Copy Relative Path"
