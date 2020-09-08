@@ -31,14 +31,14 @@ You can name it however you want.
     "pageAdjust": 19,
     "front_cover" : "https://harrypotterpicture.com",
     "toc" : [
-        ["Ch 1" , "Harry goes to Hogwarts" , 7] ,
+        ["Ch 1" , "Harry goes to Hogwarts" , 1] ,
         ["Ch 2" ,"Magic" , 25],
-        ["Ch 3" , "Dumbledore" , 39]
+        ["Ch 3" , "Dumbledore" , 30]
     ]
 }
 ```
 
-The pageAdjust is very important. The problem with pdf books is that the real book's first page doesn't occur until chapter one starts. On pdf files, page one starts on, well, page one. So it has to be adjusted. You'll have to figure this out for yourself.
+The pageAdjust is very important. The problem with pdf books is that the real book's first page doesn't occur until chapter one starts. Books have prologues, introductions, dedication page, etc. If you're reading a math textbook, you probably won't care who the book was dedicated to. On pdf files, page one starts on, well, page one. So it has to be adjusted. You'll have to figure this out for yourself.
 
 #### How to find pageAdjust
 Inside the pdf book, go to the table of contents. Page one of the real book usually starts at chapter one. Go there inside the pdf, and note the pdf page number. Subract it by 1, then you got the pageAdjust number.
