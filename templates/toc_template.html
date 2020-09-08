@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title>{{ data.title }}</title>
 </head>
 <body>
-    
+    <h1>{{ data.title }}</h1>
+    <h2>{{ data.author }}</h2>
+    <h2>{{ data.year }}</h2>
+    <img style='float:right; width:20%;' src='{{ data.front_cover }}' >
+
+    <ul>Table of Contents</ul>
+    {% for chapter in data.toc %}
+        <li><a href='{{ data.path }}#page={{ chapter[2] + data.pageAdjust }}'>{{ chapter[0] }} &nbsp;&nbsp;&nbsp; {{chapter[1]}}</a></li>
+    {% endfor %}
 </body>
 </html>
